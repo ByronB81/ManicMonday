@@ -1,30 +1,28 @@
+import java.io.Console;
+
 public class App {
   public static void main(String[] args) {
-    Person off1 = new Person();
-      off1.pName = "Susan";
-      off1.pAge = 34;
-      off1.pHair = "brown";
-      off1.pLoud = true;
-      off1.pMet = false;
+    Console console = System.console();
 
-    Person off2 = new Person();
-      off2.pName = "Brian";
-      off2.pAge = 46;
-      off2.pHair = "blonde";
-      off2.pLoud = false;
-      off2.pMet = true;
+    System.out.println("how many K's can you pay?");
+    String strNum = console.readLine();
+    Integer maxAfford = Integer.parseInt(strNum);
 
-    Person off3 = new Person();
-      off3.pName = "Chris";
-      off3.pAge = 27;
-      off3.pHair = "brown";
-      off3.pLoud = false;
-      off3.pMet = false;
+    Person off1 = new Person("Susan",34,"brown",true, false,40);
+    Person off2 = new Person("Brian",46,"blonde",false,true,75);
+    Person off3 = new Person("Chris",27,"brown",false,false,55);
 
-    Person[] hatch = {off1.off2,off3};
+  Person[] hatch = {off1,off2,off3};
 
-    for Person (coworker : hatch) {
-      System.out.println(coworker.pName);
+    for  (Person coworker : hatch) {
+      if (coworker.afford(maxAfford)) {
+        System.out.println(coworker.pName);
+      }
+
+
+
+      // System.out.println(coworker.pName);
+      // System.out.println(coworker.afford(maxAfford));
     }
   }
 }
