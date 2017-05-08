@@ -2,6 +2,7 @@ class Triangle {
   public int sideA;
   public int sideB;
   public int sideC;
+  public boolean realTriangle;
 
   public Triangle(int a, int b, int c){
     sideA = a;
@@ -13,4 +14,11 @@ class Triangle {
     return uTri.sideA;
   }
 
+  public boolean trueTri(Triangle uTri){
+    if (sideA + sideB > sideC || sideA + sideC > sideB || sideB + sideC > sideA) {
+      return realTriangle = true;
+    } else {
+      return realTriangle = false;
+    }
+  }
 }
