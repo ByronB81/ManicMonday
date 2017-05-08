@@ -16,6 +16,6 @@ class Person {
   }
 
   public boolean afford(int maxAfford) {
-    return (pPrice < maxAfford);
+    return (pPrice <= maxAfford);
   }
 }

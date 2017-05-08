@@ -36,9 +36,6 @@ public class App {
         }
       }
 
-
-      // System.out.println(coworker.pName);
-      // System.out.println(coworker.afford(maxAfford));
     }else if(navigate.equals("add")||navigate.equals("Add")){
       System.out.println("What is this persons name?");
       String pName = console.readLine();
