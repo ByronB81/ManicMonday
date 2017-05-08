@@ -15,9 +15,10 @@ public class App {
     hatch.add(off2);
     hatch.add(off3);
 
-    while(true){
+    boolean programRunning = true;
+    while(programRunning){
 
-      System.out.println("Hello, would you like a full list, priced list, or add to list??");
+      System.out.println("Hello, would you like a full list, priced list, add to list, or exit?");
       String navigate = console.readLine();
 
       if (navigate.equals("full")||navigate.equals("Full")){
@@ -68,7 +69,10 @@ public class App {
         System.out.println(uPerson.pMet);
         System.out.println(uPerson.pPrice);
 
-      }else{
+      }else if(navigate.equals("exit")||navigate.equals("Exit")) {
+        programRunning = false;
+
+      }else {
         System.out.println("I'm sorry I don't recognize that response. Please start over.");
       }
     }
