@@ -1,24 +1,30 @@
 public class App {
   public static void main(String[] args) {
     Person off1 = new Person();
-    off1.pName = "Susan";
-    off1.age = 34;
-    off1.hair = "brown";
-    off1.loud = true;
-    off1.met = false;
+      off1.pName = "Susan";
+      off1.pAge = 34;
+      off1.pHair = "brown";
+      off1.pLoud = true;
+      off1.pMet = false;
 
     Person off2 = new Person();
-    off2.name = "Brian";
-    off2.age = 46;
-    off2.hair = "blonde";
-    off2.loud = false;
-    off2.met = true;
+      off2.pName = "Brian";
+      off2.pAge = 46;
+      off2.pHair = "blonde";
+      off2.pLoud = false;
+      off2.pMet = true;
 
     Person off3 = new Person();
-    off3.name = "Chris";
-    off3.age = 27;
-    off3.hair = "brown";
-    off3.loud = false;
-    off3.met = false;
+      off3.pName = "Chris";
+      off3.pAge = 27;
+      off3.pHair = "brown";
+      off3.pLoud = false;
+      off3.pMet = false;
+
+    Person[] hatch = {off1.off2,off3};
+
+    for Person (coworker : hatch) {
+      System.out.println(coworker.pName);
+    }
   }
 }
