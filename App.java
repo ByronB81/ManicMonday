@@ -39,6 +39,20 @@ public class App {
 
       // System.out.println(coworker.pName);
       // System.out.println(coworker.afford(maxAfford));
+    }else if(navigate.equals("add")||navigate.equals("Add")){
+      System.out.println("What is this persons name?");
+      String pName = console.readLine();
+      System.out.println("What is this persons age?");
+      int pAge = Integer.parseInt(console.readLine());
+      System.out.println("What color is this persons hair?");
+      String pHair = console.readLine();
+      System.out.println("Is this person loud?");
+      boolean pLoud = Boolean.parseBoolean(console.readLine());
+      System.out.println("Have you met this person?");
+      boolean pMet = Boolean.parseBoolean(console.readLine());
+      System.out.println("How much does this person make?");
+      int pPrice = Integer.parseInt(console.readLine());
+
     }else{
       System.out.println("I'm sorry I don't recognize that response. Please start over.");
     }
