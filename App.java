@@ -9,7 +9,7 @@ public class App {
 
     Person[] hatch = {off1,off2,off3};
 
-    System.out.println("Hello, would you like a full list or priced list?");
+    System.out.println("Hello, would you like a full list, priced list, or add to list??");
     String navigate = console.readLine();
 
     if (navigate.equals("full")||navigate.equals("Full")){
@@ -22,7 +22,7 @@ public class App {
         System.out.println(coworker.pMet);
         System.out.println(coworker.pPrice);
       }
-    }else{
+    }else if (navigate.equals("priced")||navigate.equals("priced list")){
 
     System.out.println("Okay, how many K's can you pay");
     String strNum = console.readLine();
@@ -39,6 +39,10 @@ public class App {
 
       // System.out.println(coworker.pName);
       // System.out.println(coworker.afford(maxAfford));
+    }else{
+      System.out.println("I'm sorry I don't recognize that response. Please start over.");
     }
+
+
   }
 }
