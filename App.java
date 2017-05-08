@@ -38,17 +38,25 @@ public class App {
 
     }else if(navigate.equals("add")||navigate.equals("Add")){
       System.out.println("What is this persons name?");
-      String pName = console.readLine();
+      String uName = console.readLine();
       System.out.println("What is this persons age?");
-      int pAge = Integer.parseInt(console.readLine());
+      int uAge = Integer.parseInt(console.readLine());
       System.out.println("What color is this persons hair?");
-      String pHair = console.readLine();
+      String uHair = console.readLine();
       System.out.println("Is this person loud?");
-      boolean pLoud = Boolean.parseBoolean(console.readLine());
+      boolean uLoud = Boolean.parseBoolean(console.readLine());
       System.out.println("Have you met this person?");
-      boolean pMet = Boolean.parseBoolean(console.readLine());
+      boolean uMet = Boolean.parseBoolean(console.readLine());
       System.out.println("How much does this person make?");
-      int pPrice = Integer.parseInt(console.readLine());
+      int uPrice = Integer.parseInt(console.readLine());
+      Person uPerson = new Person(uName, uAge, uHair, uLoud, uMet, uPrice);
+      System.out.println("--------------");
+      System.out.println(uPerson.pName);
+      System.out.println(uPerson.pAge);
+      System.out.println(uPerson.pHair);
+      System.out.println(uPerson.pLoud);
+      System.out.println(uPerson.pMet);
+      System.out.println(uPerson.pPrice);
 
     }else{
       System.out.println("I'm sorry I don't recognize that response. Please start over.");
