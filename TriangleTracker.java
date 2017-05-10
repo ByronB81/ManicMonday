@@ -6,7 +6,7 @@ public class TriangleTracker {
   public static void main(String[] args){
     Console console = System.console();
 
-    Triangle try = new Triangle(2,4,6);
+    //Triangle try = new Triangle(2,4,6);
 
     System.out.println("Making triangles!!!!!!!!");
 
@@ -21,7 +21,8 @@ public class TriangleTracker {
     if (a + b > c || a + c > b || b + c > a) {
       System.out.println("This is a triangle");
 
-      System.out.println(shape(try));
+      return trueTri(uTriangle);
+      //System.out.println(uTriangle.sideA);
 
 
     }else {
